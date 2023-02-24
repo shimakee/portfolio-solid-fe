@@ -1,0 +1,549 @@
+{
+  "_id": "2c11642d-c32b-46ff-81f8-c21187597e68",
+  "contact": {
+    "_type": "contact",
+    "email": "shimakee@gmail.com",
+    "preferredContact": "email"
+  },
+  "identity": {
+    "_type": "identity",
+    "alias": "Shimakee",
+    "first": "Kenneth",
+    "last": "De Leon",
+    "useAlias": true
+  },
+  "skills": [
+    {
+      "description": [
+        {
+          "_key": "a7d7be820d69",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "0b7726b5ab1e",
+              "_type": "span",
+              "marks": [],
+              "text": "Fundamentals of web development"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "HTML & CSS",
+      "type": "frontend"
+    },
+    {
+      "description": [
+        {
+          "_key": "4a41bab96450",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "f464aa31a4b5",
+              "_type": "span",
+              "marks": [],
+              "text": "Language initially intended for web interactivity."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Javascript & Typescript",
+      "type": "frontend"
+    },
+    {
+      "description": [
+        {
+          "_key": "487975e460ea",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "1b1ff6e32b5a",
+              "_type": "span",
+              "marks": [],
+              "text": "Markup language commonly used for developing UI on windows application."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Xaml",
+      "type": "frontend"
+    },
+    {
+      "description": [
+        {
+          "_key": "e4be1a10820d",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "511641793a58",
+              "_type": "span",
+              "marks": [],
+              "text": "Multi purpose language created by Microsoft."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "C#",
+      "type": "backend"
+    },
+    {
+      "description": [
+        {
+          "_key": "0fac0752ed92",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "e03a86de54b1",
+              "_type": "span",
+              "marks": [],
+              "text": "Node is a runtime environment that enables the use of JavaScript & TypeScript for BE purposes."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "NodeJS/NestJS",
+      "type": "backend"
+    },
+    {
+      "description": [
+        {
+          "_key": "b7213b48b5ef",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "5b67404f5dc0",
+              "_type": "span",
+              "marks": [],
+              "text": "Source control."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Github",
+      "type": "general"
+    },
+    {
+      "description": [
+        {
+          "_key": "50759189a4bd",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "9a753ed75541",
+              "_type": "span",
+              "marks": [],
+              "text": "Source control."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "GItlab",
+      "type": "general"
+    },
+    {
+      "description": [
+        {
+          "_key": "41c917491b56",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "3743452d233e",
+              "_type": "span",
+              "marks": [],
+              "text": "Source control"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "SourceTree",
+      "type": "general"
+    },
+    {
+      "description": [
+        {
+          "_key": "811ad3c9c227",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "9ef2a97b412f",
+              "_type": "span",
+              "marks": [],
+              "text": "Source control."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Bitbucket",
+      "type": "general"
+    },
+    {
+      "description": [
+        {
+          "_key": "8dc37f3085e2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "c75417c674b1",
+              "_type": "span",
+              "marks": [],
+              "text": "Microsoft library for web/native development on C#."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": ".Net [core, maui]",
+      "type": "libraries"
+    },
+    {
+      "description": [
+        {
+          "_key": "102543c1dfb6",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "74db52e4b652",
+              "_type": "span",
+              "marks": [],
+              "text": "Microsoft library to use C# for frontend development."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Blazor [server, wasm]",
+      "type": "frontend"
+    },
+    {
+      "description": [
+        {
+          "_key": "9008f57aa538",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "58e2be9150d3",
+              "_type": "span",
+              "marks": [],
+              "text": "Framework for FE development."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "VueJS/Nuxt",
+      "type": "frontend"
+    },
+    {
+      "description": [
+        {
+          "_key": "7975cb02bac9",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "c722c0d336e9",
+              "_type": "span",
+              "marks": [],
+              "text": "Framework for frontend development."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "React/NextJS",
+      "type": "frontend"
+    },
+    {
+      "description": [
+        {
+          "_key": "3b36d52af7f9",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "09b55dc9e7fd",
+              "_type": "span",
+              "marks": [],
+              "text": "Tools to help FE development w/ react library."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Redux/RTK query",
+      "type": "libraries"
+    },
+    {
+      "description": [
+        {
+          "_key": "dc855e2ba0db",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "05b684570a4d",
+              "_type": "span",
+              "marks": [],
+              "text": "Library for testing FE applications."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Jest",
+      "type": "libraries"
+    },
+    {
+      "description": [
+        {
+          "_key": "72aea25c8359",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "2166b3a10489",
+              "_type": "span",
+              "marks": [],
+              "text": "Repository manager to consolidate multiple repositories into one single mono repo."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Rush monorepo",
+      "type": "libraries"
+    },
+    {
+      "description": [
+        {
+          "_key": "a23293a46013",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "4bb765695077",
+              "_type": "span",
+              "marks": [],
+              "text": "Tool for documenting FE components."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Storybook",
+      "type": "libraries"
+    },
+    {
+      "description": [
+        {
+          "_key": "430bf69f29ba",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "46b10aa0135f",
+              "_type": "span",
+              "marks": [],
+              "text": "ORM - object relational mapper to map entities to database."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Entity Framework",
+      "type": "backend"
+    },
+    {
+      "description": [
+        {
+          "_key": "9dfa0b63ee35",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "3d9bab5c665e",
+              "_type": "span",
+              "marks": [],
+              "text": "Game engine for developing games using C#."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Unity",
+      "type": "general"
+    },
+    {
+      "description": [
+        {
+          "_key": "4621b09b4ba7",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "7daaaef395af",
+              "_type": "span",
+              "marks": [],
+              "text": "Database."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Sql/MongoDb/PostgreSql",
+      "type": "backend"
+    },
+    {
+      "description": [
+        {
+          "_key": "c9e74c731dae",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "94caa7995851",
+              "_type": "span",
+              "marks": [],
+              "text": "Content management system."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Bloomreach",
+      "type": "cms"
+    },
+    {
+      "description": [
+        {
+          "_key": "7ff6cad51091",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "449e225e7284",
+              "_type": "span",
+              "marks": [],
+              "text": "Headless content management system."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Sanity",
+      "type": "cms"
+    },
+    {
+      "description": [
+        {
+          "_key": "43cdb2ce5ccc",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "6cb87c103f7f",
+              "_type": "span",
+              "marks": [],
+              "text": "Content management system."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Storyblok",
+      "type": "cms"
+    },
+    {
+      "description": [
+        {
+          "_key": "7d68b8088c08",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "65e201caac31",
+              "_type": "span",
+              "marks": [],
+              "text": "Tool to facilitate & document work flow & progress."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Jira",
+      "type": "general"
+    },
+    {
+      "description": [
+        {
+          "_key": "2d9d14429f18",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "6b8b79fb910f",
+              "_type": "span",
+              "marks": [],
+              "text": "Tool to help w/ documentation."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Confluence",
+      "type": "general"
+    },
+    {
+      "description": [
+        {
+          "_key": "335d119959c6",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "07b69a52a9a0",
+              "_type": "span",
+              "marks": [],
+              "text": "Simple Kanban board tool."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Trello",
+      "type": "general"
+    }
+  ],
+  "socials": [
+    {
+      "href": "https://github.com/shimakee",
+      "icon": "github",
+      "name": "github"
+    },
+    {
+      "href": "https://gitlab.com/Shimakee",
+      "icon": "gitlab",
+      "name": "gitlab"
+    }
+  ]
+}

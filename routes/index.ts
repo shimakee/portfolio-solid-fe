@@ -2,6 +2,8 @@ import { lazy } from "solid-js";
 import { getProfile } from "../service/profileService";
 
 const PortfolioPage = lazy(() => import("../src/pages/portfolioPage"));
+const HomePage = lazy(() => import("../src/pages/homePage"));
+
 export const routes = [
   {
     path: "portfolio",
@@ -11,6 +13,10 @@ export const routes = [
   {
     path: "/",
     element: "This the home page",
+  },
+  {
+    path: "/home/:id",
+    component: HomePage,
   },
   //   {
   //     path: "/",

@@ -20,9 +20,9 @@ const LinkComponent = (props: LinkProps) => (
   <A
     class={`${
       props.activeLink() === props.link
-        ? " text-slate-100 bg-zinc-900 "
-        : "bg-slate-100 text-zinc-900"
-    } p-5 transition-all`}
+        ? "bg-secondary text-primary"
+        : "text-secondary  bg-primary"
+    } p-5 transition-all flex-grow`}
     href={`/${props.link}`}
     onClick={() => props.onClick(props.link)}
   >
@@ -39,7 +39,7 @@ const NavComponent = (props: NavProps) => {
     <Transition name={`slide-${props.transition}`}>
       <Show when={props.isOpen()}>
         <nav
-          class={`bg-green-200 flex justify-evenly m-0 w-full ${
+          class={`bg-secondary flex justify-evenly m-0 w-full border-secondary ${
             props.transition === "top" ? "top-0" : "bottom-0"
           }`}
         >

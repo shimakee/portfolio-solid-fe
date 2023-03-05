@@ -35,18 +35,14 @@
 
 .transition-rotate {
   transition: transform 0.3s linear;
-  /* transition: rotate 0.5s; */
-  /* transform: rotate(0deg); */
   /* animation: rotateMenu 3s 50% linear; */
 }
 
 .rotate-180 {
-  /* rotate: z 180deg; */
   transform: rotate(0deg);
 }
 
 .rotate-360 {
-  /* rotate: z 0deg; */
   transform: rotate(180deg);
 }
 

@@ -1,15 +1,17 @@
 {
   "_id": "2c11642d-c32b-46ff-81f8-c21187597e68",
   "contact": {
+    "_id": "2c11642d-c32b-46ff-81f8-c21187597e68",
     "_type": "contact",
     "email": "shimakee@gmail.com",
     "preferredContact": "email"
   },
   "identity": {
+    "_id": "2c11642d-c32b-46ff-81f8-c21187597e68",
     "_type": "identity",
     "alias": "Shimakee",
-    "first": "Kenneth",
-    "last": "De Leon",
+    "first": "Sample First",
+    "last": "Sample last",
     "useAlias": true
   },
   "skills": [

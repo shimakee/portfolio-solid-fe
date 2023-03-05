@@ -1,6 +1,6 @@
 import { RouteDataFuncArgs } from "@solidjs/router";
 import { createResource } from "solid-js";
-import { Profile } from "../types";
+import { Profile } from "../dataTypes";
 import {
   contentTypeEnum,
   orderEnum,

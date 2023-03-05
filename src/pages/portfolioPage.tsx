@@ -1,7 +1,7 @@
 import { createQuery, useQueryClient } from "@tanstack/solid-query";
 import { Match, Switch } from "solid-js";
 import { getProfile } from "../../service/profileService";
-import { Profile } from "../../types";
+import { Profile } from "../../dataTypes";
 
 export const PortfolioPage = () => {
   const queryClient = useQueryClient();

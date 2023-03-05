@@ -1,13 +1,13 @@
 import { useRouteData } from "@solidjs/router";
-import { Resource, Show } from "solid-js";
-import { ProfileResource } from "../../types";
+import { ResourceReturn, Show } from "solid-js";
+import { Profile } from "../../types";
 
 export const PortfolioPage = () => {
-  const profile = useRouteData<Resource<ProfileResource>>();
+  const [data] = useRouteData<ResourceReturn<Profile>>();
 
   return (
-    <Show when={profile?.()} fallback={<p>Invalid property id</p>}>
-      {profile && JSON.stringify(profile())}
+    <Show when={data} fallback={<p>Invalid property id</p>}>
+      {data && JSON.stringify(data())}
     </Show>
   );
 };

@@ -5,10 +5,10 @@ import { contentTypeEnum, orderEnum, queryItems } from "./sanityService";
 import profileJson from "../mockData/profile.json";
 
 export const getProfile = () => {
-  const profileMock = createResource(() => {
-    return profileJson;
-  });
-  return profileMock;
+  // const profileMock = createResource(() => {
+  //   return profileJson;
+  // });
+  // return profileMock;
 
   const profile = createResource("profileId", async () => {
     const queryParams = {

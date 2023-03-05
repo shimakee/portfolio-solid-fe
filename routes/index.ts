@@ -7,7 +7,7 @@ const HomePage = lazy(() => import("../src/pages/homePage"));
 export const routes = [
   {
     path: "portfolio",
-    data: getProfile,
+    // data: getProfile,
     component: PortfolioPage,
   },
   {

@@ -1,33 +1,42 @@
 import { RouteDataFuncArgs } from "@solidjs/router";
 import { createResource } from "solid-js";
 import { Profile } from "../types";
-import { contentTypeEnum, orderEnum, queryItems } from "./sanityService";
+import {
+  contentTypeEnum,
+  orderEnum,
+  queryItem,
+  queryItems,
+} from "./sanityService";
 import profileJson from "../mockData/profile.json";
 
-export const getProfile = () => {
+export const getProfile = async (): Promise<Profile> => {
   // const profileMock = createResource(() => {
   //   return profileJson;
   // });
   // return profileMock;
 
-  const profile = createResource("profileId", async () => {
-    const queryParams = {
-      type: contentTypeEnum.PROFILE,
-      condition: `_id == "2c11642d-c32b-46ff-81f8-c21187597e68"`,
-      limit: 1,
-      properties: [
-        "_id",
-        '"profileImage": profileImage.asset->url',
-        "identity",
-        "contact",
-        '"skills": skills[]->{type, title, description,"image":image.asset->url}',
-        '"socials": socials[]->{icon, name, href}',
-      ],
-    };
-    return await queryItems<Profile[]>(queryParams);
-  });
+  const queryParams = {
+    type: contentTypeEnum.PROFILE,
+    condition: `_id == "2c11642d-c32b-46ff-81f8-c21187597e68"`,
+    properties: [
+      "_id",
+      '"profileImage": profileImage.asset->url',
+      "identity",
+      "contact",
+      '"skills": skills[]->{type, title, description,"image":image.asset->url}',
+      '"socials": socials[]->{icon, name, href}',
+    ],
+  };
 
-  return profile;
+  /* Using normal query */
+  return await queryItem<Profile>(queryParams);
+
+  /* Using Create resource */
+  // const profile = createResource("profileId", async () => {
+  //   return await queryItem<Profile>(queryParams);
+  // });
+
+  // return profile;
 };
 
 // export const getProperties = ({ params }: RouteDataFuncArgs) => {

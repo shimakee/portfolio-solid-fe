@@ -25,15 +25,18 @@ export enum orderEnum {
   DESC = "desc",
 }
 
-interface queryItemsParams {
+interface queryItemParams {
   type: contentTypeEnum;
   specifier?: string;
   properties?: string[];
+  condition?: string;
+}
+
+interface queryItemsParams extends queryItemParams {
   page?: number;
   limit?: number;
   order?: orderEnum;
   orderBy?: string;
-  condition?: string;
 }
 
 //used to build custom queries
@@ -41,6 +44,22 @@ export const sanityQuery = async (query: string) => {
   const result = await clientService.fetch(query);
 
   return result;
+};
+
+export const queryItem = async <T>({
+  type,
+  specifier,
+  properties,
+  condition,
+}: queryItemParams): Promise<T> => {
+  const resultLength = `[0]`;
+  const queryString = `*[_type == "${type}" ${
+    condition ? `&& ${condition}` : ""
+  }]${specifier ? `.${specifier}` : ""}${
+    properties ? `{${properties.toString()}}` : ""
+  }${resultLength}`;
+
+  return await clientService.fetch(queryString);
 };
 
 //generic use for pagination
@@ -58,7 +77,7 @@ export const queryItems = async <T>({
   const limitMax = limit && limit > 20 ? 20 : limit || 10;
   const startIndex = 0 * (page || 1);
   const lastIndex = startIndex + (limitMax - 1);
-  const resultLength = isSingle ? `[0]` : `[${startIndex}..${lastIndex}]`;
+  const resultLength = isSingle ? `` : `[${startIndex}..${lastIndex}]`;
   const queryString = `*[_type == "${type}" ${
     condition ? `&& ${condition}` : ""
   }]${specifier ? `.${specifier}` : ""}${

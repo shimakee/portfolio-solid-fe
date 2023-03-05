@@ -1,27 +1,30 @@
-import { useRouteData } from "@solidjs/router";
 import { createQuery, useQueryClient } from "@tanstack/solid-query";
-import { ResourceReturn, Show } from "solid-js";
+import { Match, Switch } from "solid-js";
 import { getProfile } from "../../service/profileService";
 import { Profile } from "../../types";
 
 export const PortfolioPage = () => {
-  // const [data] = useRouteData<ResourceReturn<Profile>>();
   const queryClient = useQueryClient();
-  const query = createQuery(() => ["profileData"], getProfile, {
+  const query = createQuery<Profile, any>(() => ["profileData"], getProfile, {
     staleTime: Infinity, // never refetch data always fresh until invalidated
   });
 
   return (
-    // <Show when={data} fallback={<p>Invalid property id</p>}>
-    //   {JSON.stringify(data())}
-    // </Show>
-    <Show when={query.isSuccess} fallback={<p>Invalid property id</p>}>
-      {/* invalidates your queries */}
-      <button onClick={() => queryClient.invalidateQueries(["profileData"])}>
-        Refetch
-      </button>
-      {query.data && JSON.stringify(query.data[0]())}
-    </Show>
+    <Switch>
+      <Match when={query.isLoading}>
+        <p>is Loading...</p>
+      </Match>
+      <Match when={query.isError}>
+        <p>Error: {query.error?.message}</p>
+      </Match>
+      <Match when={query.isSuccess}>
+        {/* invalidates your queries */}
+        <button onClick={() => queryClient.invalidateQueries(["profileData"])}>
+          Refetch
+        </button>
+        {JSON.stringify(query.data)}
+      </Match>
+    </Switch>
   );
 };
 

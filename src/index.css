@@ -2,12 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+/* offset */
+.bottom--20 {
+  bottom: -20%;
+}
+
 /* Google Icon */
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
 /* SolidJs Transition animations*/
+@keyframes rotateMenu {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.transition-rotate {
+  transition: transform 0.3s linear;
+  /* transition: rotate 0.5s; */
+  /* transform: rotate(0deg); */
+  /* animation: rotateMenu 3s 50% linear; */
+}
+
+.rotate-180 {
+  /* rotate: z 180deg; */
+  transform: rotate(0deg);
+}
+
+.rotate-360 {
+  /* rotate: z 0deg; */
+  transform: rotate(180deg);
+}
 
 .fade-enter-active,
 .fade-exit-active {
@@ -18,13 +55,26 @@
   opacity: 0;
 }
 
-.slide-fade-enter-active {
+/* slide-top Transition component*/
+.slide-top-enter-active {
   transition: all 0.3s ease-in;
 }
-.slide-fade-exit-active {
+.slide-top-exit-active {
   transition: all 0.3s ease-in;
 }
-.slide-fade-enter,
-.slide-fade-exit-to {
-  transform: translateX(-250px);
+.slide-top-enter,
+.slide-top-exit-to {
+  transform: translateY(-100%);
+}
+
+/* slide-bot Transition component*/
+.slide-bot-enter-active {
+  transition: all 0.3s ease-in;
+}
+.slide-bot-exit-active {
+  transition: all 0.3s ease-in;
+}
+.slide-bot-enter,
+.slide-bot-exit-to {
+  transform: translateY(100%);
 }

@@ -9,11 +9,8 @@ import {
 } from "./sanityService";
 import profileJson from "../mockData/profile.json";
 
-export const getProfile = async (): Promise<Profile> => {
-  // const profileMock = createResource(() => {
-  //   return profileJson;
-  // });
-  // return profileMock;
+export const getProfile = async (): Promise<any> => {
+  return profileJson;
 
   const queryParams = {
     type: contentTypeEnum.PROFILE,

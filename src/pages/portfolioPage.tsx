@@ -18,11 +18,15 @@ export const PortfolioPage = () => {
         <p>Error: {query.error?.message}</p>
       </Match>
       <Match when={query.isSuccess}>
-        {/* invalidates your queries */}
-        <button onClick={() => queryClient.invalidateQueries(["profileData"])}>
-          Refetch
-        </button>
-        {JSON.stringify(query.data)}
+        <div class="w-full bg-black text-slate-400 overflow-ellipsis p-3 break-words">
+          {/* invalidates your queries */}
+          <button
+            onClick={() => queryClient.invalidateQueries(["profileData"])}
+          >
+            Refetch
+          </button>
+          <p>{JSON.stringify(query.data)}</p>
+        </div>
       </Match>
     </Switch>
   );

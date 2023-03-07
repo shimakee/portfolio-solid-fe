@@ -39,9 +39,11 @@
     "vite-plugin-solid": "^2.5.0"
   },
   "dependencies": {
+    "@portabletext/to-html": "^2.0.0",
     "@sanity/client": "^5.2.2",
     "@solidjs/router": "^0.7.0",
     "@tanstack/solid-query": "^4.24.10",
+    "isomorphic-dompurify": "^1.0.0",
     "solid-js": "^1.6.10",
     "solid-transition-group": "^0.0.13"
   }

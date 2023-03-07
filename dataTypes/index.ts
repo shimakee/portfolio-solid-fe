@@ -23,7 +23,7 @@ export interface Skill extends sanityBase {
   image?: string;
   type: string;
   title: string;
-  description?: string;
+  description?: any[];
 }
 
 export interface Social extends sanityBase {
@@ -42,14 +42,14 @@ export interface Profile extends sanityBase {
 
 export interface Project extends sanityBase {
   title: string;
-  details: string;
+  details: any[];
   skills?: Skill[];
   projectLinks?: Social[];
 }
 
 export interface Resource extends sanityBase {
   title: string;
-  details?: string;
+  details?: any[];
   resourceLinks?: Social[];
 }
 
@@ -58,11 +58,7 @@ export interface Work extends sanityBase {
   endDate?: Date;
   company: string;
   position: string;
-  details?: string;
+  details?: any[];
   skills?: Skill[];
   workLinks?: Social[];
 }
-
-export type ProjectResource = SolidResource<Project[]>;
-export type WorkResource = SolidResource<Work[]>;
-export type ResourceResource = SolidResource<Resource[]>;

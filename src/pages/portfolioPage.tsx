@@ -1,7 +1,8 @@
 import { createQuery, useQueryClient } from "@tanstack/solid-query";
-import { Match, Switch } from "solid-js";
+import { For, Match, Switch } from "solid-js";
 import { getProfile } from "../../service/profileService";
 import { Profile } from "../../dataTypes";
+import SkillComponent from "../components/skillComponent";
 
 export const PortfolioPage = () => {
   const queryClient = useQueryClient();
@@ -25,7 +26,21 @@ export const PortfolioPage = () => {
           >
             Refetch
           </button>
-          <p>{JSON.stringify(query.data)}</p>
+          {/* <p>{JSON.stringify(query.data)}</p> */}
+          <For
+            each={query.data?.skills?.sort((first, second) =>
+              first.type > second.type ? -1 : 1
+            )}
+          >
+            {(skill) => (
+              <>
+                <SkillComponent skill={skill} />
+                <br />
+                <hr />
+                <br />
+              </>
+            )}
+          </For>
         </div>
       </Match>
     </Switch>
